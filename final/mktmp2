@@ -1,0 +1,14 @@
+#!/bin/sh
+mkdir Temp2
+echo This is a mock directory for testing UNIX shell scripts > Temp2/README
+echo This is C program > Temp2/example.c
+echo This file contains the output of lab2.c program. > Temp2/lab2.out
+touch Temp2/e1.out
+touch Temp2/e2.out
+touch Temp2/e3.out
+mkdir Temp2/Dir1
+touch Temp2/Dir1/e4.txt
+touch Temp2/Dir1/e5.txt
+mkdir Temp2/Dir2
+mkdir Temp2/Dir3
+

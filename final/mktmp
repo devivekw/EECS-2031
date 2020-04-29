@@ -1,0 +1,14 @@
+#!/bin/sh
+mkdir Temp
+touch Temp/example.c
+touch Temp/a.out
+chmod u+x Temp/a.out
+touch Temp/lab1.out
+chmod u+x Temp/lab1.out
+touch Temp/lab2.out
+touch Temp/prog1
+touch Temp/file2
+echo Directory Temp has been created.
+ls -l Temp
+
+

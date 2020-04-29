@@ -1,0 +1,161 @@
+indigo 356 % octal
+012			
+10		
+indigo 357 % octal
++0340
+224
+indigo 358 % octal
+-0340
+-224
+indigo 359 % octal
+05
+5
+----------------------------
+indigo 361 % hexa
+0x8			
+8		
+indigo 362 % hexa
+0X10
+16
+indigo 363 % hexa
+-0x920
+-2336
+indigo 364 % hexa
++0XDE
+222
+indigo 365 % hexa
++0x1bC6
+7110
+----------------------------
+indigo 150 % converts2i
+7428
+7428
+indigo 151 % converts2i
++5
+5
+indigo 152 % converts2i
+-73456201
+-73456201
+indigo 153 % converts2i
+0362
+242
+indigo 154 % converts2i
+-010
+-8
+indigo 155 % converts2i
++0637201347
+108856039
+indigo 156 % converts2i
+0xFE
+254
+indigo 157 % converts2i
++0X100
+256
+indigo 158 % converts2i
+-0Xabcdef
+-11259375
+indigo 159 % converts2i
+0x12A9aB
+1223083
+indigo 160 % converts2i
+0
+0
+indigo 161 % converts2i
+-0
+0
+----------------------------
+indigo 200 % concat This Is The Final Exam
+ThisIsTheFinalExam
+indigo 201 % concat hello
+hello
+indigo 202 % concat
+
+indigo 203 % concat 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+1234567891011121314151617181920
+----------------------------
+indigo 413 % ls
+mktmp*	mychex*
+indigo 414 % echo Run script mktmp to create directory Temp.
+Run script mktmp to create directory Temp.
+indigo 418 % mktmp
+Directory Temp has been created.
+total 0
+-rwx------ 1 utn faculty 0 Nov 29 15:31 a.out
+-rw------- 1 utn faculty 0 Nov 29 15:31 example.c
+-rw------- 1 utn faculty 0 Nov 29 15:31 file2
+-rwx------ 1 utn faculty 0 Nov 29 15:31 lab1.out
+-rw------- 1 utn faculty 0 Nov 29 15:31 lab2.out
+-rw------- 1 utn faculty 0 Nov 29 15:31 prog1
+indigo 419 % ls
+mktmp*	mychex*  Temp/
+indigo 420 % mychex GhostDir Temp Temp2
+Directory 'GhostDir' does not exist.
+indigo 421 % mychex Temp
+Change 'Temp/example.c' to executable? y
+Change 'Temp/file2' to executable? Y
+Change 'Temp/lab2.out' to executable? n
+Change 'Temp/prog1' to executable? N
+-rwx------ 1 utn faculty 0 Nov 29 15:31 Temp/a.out
+-rwx------ 1 utn faculty 0 Nov 29 15:31 Temp/example.c
+-rwx------ 1 utn faculty 0 Nov 29 15:31 Temp/file2
+-rwx------ 1 utn faculty 0 Nov 29 15:31 Temp/lab1.out
+indigo 422 % echo Now move mychex to inside directory Temp.
+Now move mychex to inside directory Temp.
+indigo 423 % mv mychex Temp/.
+indigo 424 % cd Temp
+indigo 426 % ls -l
+total 4
+-rwx------ 1 utn faculty   0 Nov 29 15:31 a.out*
+-rwx------ 1 utn faculty   0 Nov 29 15:31 example.c*
+-rwx------ 1 utn faculty   0 Nov 29 15:31 file2*
+-rwx------ 1 utn faculty   0 Nov 29 15:31 lab1.out*
+-rw------- 1 utn faculty   0 Nov 29 15:31 lab2.out
+-rwx------ 1 utn faculty 828 Nov 29 15:22 mychex*
+-rw------- 1 utn faculty   0 Nov 29 15:31 prog1
+indigo 427 % mychex
+Change 'lab2.out' to executable? y
+Change 'prog1' to executable? Y
+-rwx------ 1 utn faculty 0 Nov 29 15:31 a.out
+-rwx------ 1 utn faculty 0 Nov 29 15:31 example.c
+-rwx------ 1 utn faculty 0 Nov 29 15:31 file2
+-rwx------ 1 utn faculty 0 Nov 29 15:31 lab1.out
+-rwx------ 1 utn faculty 0 Nov 29 15:31 lab2.out
+-rwx------ 1 utn faculty 828 Nov 29 15:22 mychex
+-rwx------ 1 utn faculty 0 Nov 29 15:31 prog1
+indigo 428 %
+----------------------------
+indigo 414 % echo Run script mktmp2 to create directory Temp2.
+Run script mktmp2 to create directory Temp2.
+indigo 417 % mktmp2
+indigo 418 % ls
+counting*  mktmp2*  Temp2/
+indigo 419 % ls -l Temp2
+total 24
+drwx------ 2 utn faculty 4096 Nov 29 17:05 Dir1/
+drwx------ 2 utn faculty 4096 Nov 29 17:05 Dir2/
+drwx------ 2 utn faculty 4096 Nov 29 17:05 Dir3/
+-rw------- 1 utn faculty    0 Nov 29 17:05 e1.out
+-rw------- 1 utn faculty    0 Nov 29 17:05 e2.out
+-rw------- 1 utn faculty    0 Nov 29 17:05 e3.out
+-rw------- 1 utn faculty   18 Nov 29 17:05 example.c
+-rw------- 1 utn faculty   49 Nov 29 17:05 lab2.out
+-rw------- 1 utn faculty   56 Nov 29 17:05 README
+indigo 420 % mv counting Temp2/.
+indigo 421 % cd Temp2
+indigo 466 % counting
+Usage: counting file1 file2 ...
+indigo 467 % counting README e1.out e2.out ghost Dir2
+-rw------- 1 utn faculty 0 Nov 29 17:05 e1.out
+-rw------- 1 utn faculty 0 Nov 29 17:05 e2.out
+Found 2 empty file(s)
+indigo 468 % counting README e1.out ghost shadow e3.out lab2.out Dir2 alien Dir3 Dir1/e4.txt
+-rw------- 1 utn faculty 0 Nov 29 17:05 e1.out
+-rw------- 1 utn faculty 0 Nov 29 17:05 e3.out
+-rw------- 1 utn faculty 0 Nov 29 17:05 Dir1/e4.txt
+Found 3 empty file(s)
+indigo 470 % counting lab2.out README ghost
+Found 0 empty file(s)
+indigo 471 % counting ghost alien
+Found 0 empty file(s)
+indigo 472 %
+----------------------------
